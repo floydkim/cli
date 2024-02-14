@@ -5,6 +5,7 @@ import {commands as configCommands} from '@react-native-community/cli-config';
 import profileHermes from '@react-native-community/cli-hermes';
 import upgrade from './upgrade/upgrade';
 import init from './init';
+import addPlatform from './addPlatform';
 
 export const projectCommands = [
   ...configCommands,
@@ -12,6 +13,7 @@ export const projectCommands = [
   doctorCommands.info,
   upgrade,
   profileHermes,
+  addPlatform,
 ] as Command[];
 
 export const detachedCommands = [
